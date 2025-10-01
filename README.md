@@ -47,3 +47,5 @@ Website ini dibangun dengan **React** dan **Tailwind CSS**, serta di-deploy meng
 5. Buka di localhost
     ```bash
     http://localhost:3xxx
+
+![Dashboard Selmerch](./src/assets/dashboard.png)

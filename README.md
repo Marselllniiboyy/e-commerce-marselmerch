@@ -48,4 +48,6 @@ Website ini dibangun dengan **React** dan **Tailwind CSS**, serta di-deploy meng
     ```bash
     http://localhost:3xxx
 
+6. Priview Dashboard react
+    ```bash
 ![Dashboard Selmerch](./src/assets/dashboard.png)

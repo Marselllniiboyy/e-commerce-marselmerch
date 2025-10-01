@@ -35,3 +35,15 @@ Website ini dibangun dengan **React** dan **Tailwind CSS**, serta di-deploy meng
 2. Masuk ke folder project
     ```bash
     cd selmerch
+
+3. Instal depedensi
+    ```bash
+    npm install
+
+4. Jalankan Project Di local
+    ```bash
+    npm run dev
+
+5. Buka di localhost
+    ```bash
+    http://localhost:3xxx

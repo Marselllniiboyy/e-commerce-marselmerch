@@ -27,7 +27,7 @@ justify-between items-center"
         value={category}
         onChange={(e) => setCategory(e.target.value)}>
           <option>Semua Kategori</option>
-          <option>Elektronik</option>
+          <option>Electronics</option>
           <option>Fashion</option>
           <option>Kecantikan</option>
         </select>

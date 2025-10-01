@@ -1,8 +1,12 @@
 import Navbar from "../components/Navbar";
 import { Outlet } from "react-router-dom";
 import logo from "../assets/logo.png";
+import { useState } from "react";
 
 export default function MainLayout() {
+  const [search, setSerch] = useState("");
+  const [category, setCategory] = useState("Semua Kategori")
+
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header/Navbar */}
@@ -16,8 +20,12 @@ justify-between items-center"
           type="text"
           placeholder="Cari produk..."
           className="w-full md:w-1/3 px-4 py-2 border rounded-lg"
+          value={search}
+          onChange={(e) => setSerch(e.target.value)}
         />
-        <select className="px-4 py-2 border rounded-lg">
+        <select className="px-4 py-2 border rounded-lg"
+        value={category}
+        onChange={(e) => setCategory(e.target.value)}>
           <option>Semua Kategori</option>
           <option>Elektronik</option>
           <option>Fashion</option>
@@ -26,7 +34,7 @@ justify-between items-center"
       </header>
       {/* Main Section */}
       <main className="flex-1 p-6">
-        <Outlet />
+        <Outlet context={{search,category}}/>
       </main>
       {/* Footer */}
       <footer className="bg-gray-800 text-white text-center p-4">

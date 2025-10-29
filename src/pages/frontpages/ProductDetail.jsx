@@ -33,7 +33,7 @@ export default function ProductDetail() {
     <div>
       <a
         key={p.id}
-        href="#"
+        href="/checkout"
         className="group relative block overflow-hidden rounded-lg h-full max-w-4xl mx-auto mt-10"
       >
         <div className="flex">

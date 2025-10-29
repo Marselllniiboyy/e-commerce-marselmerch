@@ -3,24 +3,24 @@ export default function Cart() {
   // Mengambil cart, updateQty, removeFromCart dari context useCart
   const { cart, updateQty, removeFromCart } = useCart();
   if (cart.length === 0) {
-    return <div className="p-6 text-center text-gray-600">Cart is empty</div>;
+    return <div className="p-6 text-center text-gray-300 text-lg font-bold">Cart is empty</div>;
   }
   return (
     <div className="p-6">
-      <h1 className="text-2xl font-bold mb-4">Your Cart</h1>
+      <h1 className="text-2xl font-bold mb-4 text-center">Your Cart</h1>
       <div className="space-y-4">
         {/* Menampilkan item di cart */}
         {cart.map((item) => (
           <div
             key={item.id}
             className="flex items-center justify-between border p-4 rounded-lg
-shadow-sm"
+shadow-sm bg-slate-400"
           >
             <div className="flex items-center gap-4">
               <img
                 src={item.img}
                 alt={item.name}
-                className="w-16 h-16 roundedmd"
+                className="w-16 h-16 roundedmd rounded-lg"
               />
               <div>
                 <h2 className="font-semibold">{item.name}</h2>

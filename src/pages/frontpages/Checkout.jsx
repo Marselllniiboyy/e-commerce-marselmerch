@@ -21,7 +21,7 @@ export default function Checkout() {
 
   return (
     <div className="max-w-4xl mx-auto p-6">
-      <h1 className="text-2xl font-bold mb-6">Checkout</h1>
+      <h1 className="text-2xl font-bold mb-6 text-center  ">Checkout</h1>
 
       <div className="grid md:grid-cols-2 gap-6">
         {/* Kolom kiri: Form pengiriman */}
